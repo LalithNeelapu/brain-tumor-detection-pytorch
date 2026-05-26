@@ -111,7 +111,7 @@ Modality Accuracy:
 
 ---
 
-# 🖼 Screenshots
+# 🖼 screenshots
 
 ## Streamlit Interface
 
