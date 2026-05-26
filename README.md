@@ -1,4 +1,4 @@
-# 🧠 AI-Based Brain Tumor Detection using Deep Learning (PyTorch)
+# 🧠  Brain Tumor Detection using Deep Learning (PyTorch)
 
 An end-to-end Deep Learning application for detecting brain tumors from CT and MRI images using Convolutional Neural Networks (CNN) built with PyTorch.
 
