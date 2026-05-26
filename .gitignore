@@ -1,0 +1,22 @@
+# Virtual Environment
+venv311/
+
+# Dataset
+dataset/
+
+# Python Cache
+__pycache__/
+*.pyc
+
+# Trained Model
+model.pth
+
+# Streamlit Cache
+.streamlit/
+
+# VS Code Settings
+.vscode/
+
+# System Files
+.DS_Store
+Thumbs.db
