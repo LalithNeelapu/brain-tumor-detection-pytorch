@@ -115,20 +115,19 @@ Modality Accuracy:
 
 ## Streamlit Interface
 
-![Streamlit UI](screenshots/streamlit_ui.png)
+<img src="screenshots/streamlit_ui.png" width="900">
 
 ---
 
 ## FastAPI Backend
 
-![FastAPI](screenshots/fastapi_docs.png)
+<img src="screenshots/fastapi_docs.png" width="900">
 
 ---
 
 ## Prediction Example
 
-![Prediction](screenshots/prediction_result.png)
-
+<img src="screenshots/prediction_result.png" width="350">
 ---
 
 # ⚙ Installation
