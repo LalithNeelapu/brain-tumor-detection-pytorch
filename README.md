@@ -1,6 +1,6 @@
-# 🧠  Brain Tumor Detection using Deep Learning (PyTorch)
+# 🧠 AI-Based Brain Tumor Detection using Deep Learning (PyTorch)
 
-An end-to-end Deep Learning application for detecting brain tumors from CT and MRI images using Convolutional Neural Networks (CNN) built with PyTorch.
+An end-to-end Deep Learning application that detects brain tumors from CT and MRI scans using a Convolutional Neural Network (CNN) built with PyTorch.
 
 The system predicts:
 
@@ -10,33 +10,44 @@ The system predicts:
 The project includes:
 
 - Model Training
-- Image Prediction
+- Evaluation Pipeline
+- Real-Time Prediction
 - FastAPI Backend
 - Streamlit Web Interface
-- GitHub Deployment Workflow
 
 ---
 
 # 📌 Project Overview
 
-This application uses medical imaging data to automatically classify:
+This application processes medical imaging data and performs multi-task classification.
 
-- Brain Scan Type (CT / MRI)
-- Tumor Presence (Healthy / Tumor)
+Input:
 
-The model was trained using supervised learning and deployed through a user-friendly web interface.
+Medical Image (CT / MRI)
+
+Output:
+
+1. Scan Type
+   - CT
+   - MRI
+
+2. Tumor Status
+   - Healthy
+   - Tumor
+
+The complete pipeline includes preprocessing, training, evaluation, inference, and deployment.
 
 ---
 
 # 🚀 Features
 
+- Brain Tumor Detection
 - CT / MRI Classification
-- Healthy / Tumor Detection
-- Real-time Image Upload
 - Confidence Score Prediction
 - FastAPI REST API
 - Streamlit Interactive UI
-- End-to-End ML Pipeline
+- End-to-End Deployment
+- Real-Time Inference
 
 ---
 
@@ -53,6 +64,11 @@ Classes:
 - MRI Healthy
 - MRI Tumor
 
+Split:
+
+- Train → 80%
+- Test → 20%
+
 ---
 
 # 🏗 Model Architecture
@@ -65,17 +81,16 @@ Input:
 
 64 × 64 RGB Image
 
+Architecture:
+
+Conv → ReLU → MaxPool  
+Conv → ReLU → MaxPool  
+Flatten  
+Dense Layers
+
 Output:
 
-2 Labels
-
-1. Modality
-   - CT
-   - MRI
-
-2. Tumor Status
-   - Healthy
-   - Tumor
+[ Modality , Tumor ]
 
 ---
 
@@ -86,48 +101,53 @@ Output:
 - FastAPI
 - Streamlit
 - NumPy
-- PIL
 - Matplotlib
+- PIL
 
 ---
 
-# 📈 Results
+# 📈 Evaluation Results
 
-Tumor Detection Accuracy:
+## Tumor Detection
 
-96%
-
-Tumor F1 Score:
-
-0.95
-
-Tumor Recall:
-
-98–99%
-
-Modality Accuracy:
-
-100%
+| Metric | Score |
+|--------|------|
+| Accuracy | 98.13% |
+| Precision | 98% |
+| Recall | 98% |
+| F1 Score | 98% |
 
 ---
 
-# 🖼 screenshots
+## Modality Classification
+
+| Metric | Score |
+|--------|------|
+| Accuracy | 100% |
+| Precision | 100% |
+| Recall | 100% |
+| F1 Score | 100% |
+
+---
+
+# 🖼 Screenshots
 
 ## Streamlit Interface
 
-<img src="screenshots/streamlit_ui.png" width="900">
+![Streamlit UI](screenshots/streamlit_ui.png)
 
 ---
 
 ## FastAPI Backend
 
-<img src="screenshots/fastapi_docs.png" width="900">
+![FastAPI](screenshots/fastapi_docs.png)
 
 ---
 
 ## Prediction Example
 
-<img src="screenshots/prediction_result.png" width="350">
+![Prediction](screenshots/prediction_result.png)
+
 ---
 
 # ⚙ Installation
@@ -135,7 +155,7 @@ Modality Accuracy:
 Clone Repository
 
 ```bash
-git clone YOUR_REPO_LINK
+git clone https://github.com/LalithNeelapu/brain-tumor-detection-pytorch.git
 ```
 
 Install Dependencies
@@ -152,6 +172,12 @@ Train Model
 
 ```bash
 python train.py
+```
+
+Evaluate Model
+
+```bash
+python evaluate.py
 ```
 
 Run FastAPI
@@ -184,9 +210,10 @@ BTD-CT_MRI
 ├── utils
 ├── screenshots
 ├── train.py
+├── evaluate.py
 ├── test_predict.py
-├── README.md
 ├── requirements.txt
+├── README.md
 ```
 
 ---
@@ -196,7 +223,7 @@ BTD-CT_MRI
 - Transfer Learning
 - Explainable AI (Grad-CAM)
 - Cloud Deployment
-- Improved Generalization
+- Better Generalization
 - Multi-class Tumor Classification
 
 ---
